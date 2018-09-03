@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../common/style/reset.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './Header/Header';
 import Main from './Main/Main';
