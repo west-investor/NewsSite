@@ -1,0 +1,13 @@
+.info-wrap {
+    display: flex;
+    margin-left: 55px;
+    color: lightgray;
+}
+.info-views::before {
+    content: "";
+    width: 22px;
+    height: 15px;
+    display: inline-block;
+    background: url(./eye.png) 1px 3px no-repeat;
+
+}

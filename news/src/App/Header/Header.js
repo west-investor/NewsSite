@@ -7,7 +7,7 @@ import RecentArticle from './RecentArticle/RecentArticle';
 const Header = () => (
     <div className="header">
         <div className="container">
-            <div className="row align-items-end">
+            <div className="row">
                 <div className="col-lg-12">
                     <Logo/>
                 </div>

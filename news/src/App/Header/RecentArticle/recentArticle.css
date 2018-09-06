@@ -1,4 +1,15 @@
 .recentArticle {
-    background: rgb(255, 0, 0);
-    height: 570px;
+    background: url(./post-image.jpg);
+    height: 565px;
+    color: white;
+    padding: 400px 400px 0 0;
+}
+.post-title {
+    max-width: 530px;
+    text-align: left;
+    margin-left: 55px;
+}
+.post-title a {
+    color: white;
+    text-decoration: none;
 }
