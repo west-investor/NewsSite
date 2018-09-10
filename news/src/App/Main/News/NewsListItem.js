@@ -1,21 +1,31 @@
 import React from 'react';
 
-import news from './news';
 
-const NewsListItem = () => (
+import './newsListItem.css';
+
+
+const NewsListItem = ({
+    image,
+    title,
+    date,
+    author,
+    category,
+    description,
+    tags,
+}) => (
     <div className="news-list-item">
         <div className="news-image">
-            <img src={news.image} alt=""></img>
+            <img src={image} alt=""></img>
         </div>
         <div className="news-info">
-            <h2>{news.title}</h2>
+            <h2>dfd{title}</h2>
             <div className="news-detail">
-                <div className="news-date">{news.date}</div>
-                <div className="news-author">{news.author}</div>
-                <div className="news-category">{news.category}</div>
-                <div className="news-tagss">{news.tagss}</div>
+                <div className="news-date">{date}</div>
+                <div className="news-author">{author}</div>
+                <div className="news-category">{category}</div>
+                <div className="news-tags">{tags}</div>
             </div>
-            <div className="news-description">{news.description}</div>
+            <div className="news-description">{description}</div>
         </div>
     </div>
 )
