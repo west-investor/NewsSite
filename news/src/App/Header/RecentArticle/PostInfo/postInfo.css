@@ -1,6 +1,5 @@
 .info-wrap {
     display: flex;
-    margin-left: 55px;
     color: lightgray;
 }
 .info-views::before {

@@ -1,13 +1,16 @@
 .recentArticle {
-    background: url(./post-image.jpg);
-    height: 565px;
+    display: flex;
+    
+    min-height: 530px;
     color: white;
-    padding: 400px 400px 0 0;
+}
+.post-meta {
+    align-self: flex-end;
+    margin-bottom: 20px;
 }
 .post-title {
     max-width: 530px;
     text-align: left;
-    margin-left: 55px;
 }
 .post-title a {
     color: white;

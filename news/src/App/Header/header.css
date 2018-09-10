@@ -1,3 +1,9 @@
 .header {
-    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1340px;
+}
+
+.header img {
+    position: absolute;
 }
