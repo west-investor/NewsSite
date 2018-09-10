@@ -1,6 +1,6 @@
 const news = [
     {
-        image: "",
+        image: "/images/news-img/jpg",
         title: "MY AWESOME STICKY POST",
         date: "Apr. 10, 2015",
         author: "John Backer",
