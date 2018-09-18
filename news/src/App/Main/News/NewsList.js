@@ -28,10 +28,12 @@ const NewsList = () => (
                 tags={tags}
             />
         
-        )
+                )
        
     
-) }</div>
+            ) 
+    }
+</div>
 )
 
 export default NewsList

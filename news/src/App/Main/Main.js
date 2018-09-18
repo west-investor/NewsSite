@@ -9,7 +9,7 @@ const Main = () => (
                 <div className="col-lg-9">
                     <NewsList />
                 </div>
-                <div className="col-lg-3"></div>
+                <div className="col-lg-3">Filter</div>
             </div>
         </div>
     </main>
