@@ -15,7 +15,7 @@ const NewsListItem = ({
 }) => (
     <div className="news-list-item">
         <div className="news-image">
-            <img src={image} alt=""></img>
+            <a href=""><img src={image} alt=""></img></a>
         </div>
         <div className="news-info">
             <h2><span>{title}</span></h2>
