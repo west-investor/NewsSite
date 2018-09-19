@@ -1,6 +1,7 @@
 import React from 'react';
 
 import NewsList from './News/NewsList'
+import NewsNav from './NewsNav/NewsNav'
 
 const Main = () => (
     <main className="main">
@@ -9,7 +10,9 @@ const Main = () => (
                 <div className="col-lg-9">
                     <NewsList />
                 </div>
-                <div className="col-lg-3" >Filter</div>
+                <div className="col-lg-3" >
+                    <NewsNav />
+                </div>
             </div>
         </div>
     </main>
