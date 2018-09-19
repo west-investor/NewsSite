@@ -1,8 +1,15 @@
 import React from 'react';
 
 const NewsNav = () => (
-
-    <div></div>
+    <div className="news-nav">
+        <div className="search-news">
+            <form>
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="enter news name"></input>
+            </form>
+        </div>
+        
+    </div>
 )
 
 
