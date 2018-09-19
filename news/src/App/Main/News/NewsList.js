@@ -6,9 +6,10 @@ import news from './news';
 
 const NewsList = () => (
     
-    <div className="news-list"> 
+    <div className="news-list">
     {
         news.map(({
+            id,
             image,
             title,
             date,
@@ -17,8 +18,8 @@ const NewsList = () => (
             description,
             tags,
         }) => (
-       
             <NewsListItem 
+                id={id}
                 image={image}
                 title={title}
                 date={date}
@@ -27,7 +28,6 @@ const NewsList = () => (
                 description={description}
                 tags={tags}
             />
-        
                 )
        
     
