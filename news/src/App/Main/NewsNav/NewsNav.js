@@ -1,4 +1,5 @@
 import React from 'react';
+import './newsNav.css'
 
 const NewsNav = () => (
     <div className="news-nav">
@@ -31,7 +32,9 @@ const NewsNav = () => (
                         <div className="achived-news">Achived</div>
                     </div>
                     <div className="all-recent">
-
+                        <div className="">
+                            
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,9 @@
+.news-nav {
+    margin-top: 60px;
+}
+form label {
+    font-size: 14px;
+}
+.search-news  input[type=text] {
+padding: 5px;
+}
