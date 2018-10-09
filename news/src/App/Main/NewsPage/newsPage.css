@@ -1,0 +1,27 @@
+
+.article {
+    margin-top: 60px;
+}
+.article-photo {
+    position: relative;
+
+    text-align: center;
+}
+.article-image {
+
+    width: 80%;
+}
+.article-title {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+}
+.article-tags {
+    padding-top: 20px;
+    justify-content: center;
+}
+.article-description {
+    font-size: 22px;
+}

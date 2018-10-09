@@ -1,5 +1,6 @@
 import React from 'react'
 import "../News/newsListItem.css"
+import "./newsPage.css"
 
 
 
@@ -7,13 +8,14 @@ import "../News/newsListItem.css"
 
 const NewsPage =({ match,title,id,description,author,tags,category,date,image })=> console.log(match)||(
     <div className="newsPage">
-        <div className="artile">
+        <div className="article">
             <div className="article-photo">
-                <img src={image} alt="1"></img>
+                <img className="article-image" src={image} alt="1"></img>
+                <div className="article-title">
+                    <h3>{title}</h3>
+                </div>
             </div>
-            <div className="article-title">
-                <h3>{title}</h3>
-            </div>
+            
             <div className="article-tags news-detail">
                 <div className="news-date pr-2">{date}</div>    
                 <div className="news-author pr-2 newsDetail-link">By <a href="">{author}</a></div>
