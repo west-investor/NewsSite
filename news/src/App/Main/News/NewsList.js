@@ -4,11 +4,14 @@ import NewsListItem from './NewsListItem';
 import news from './news';
 
 
+
+
 const NewsList = () => (
     
     <div className="news-list">
-    {
+    { 
         news.map(({
+            
             id,
             image,
             title,
@@ -27,12 +30,15 @@ const NewsList = () => (
                 category={category}
                 description={description}
                 tags={tags}
+                key={id}
+                
             />
                 )
        
     
             ) 
     }
+    
 </div>
 )
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import {Link} from 'react-router-dom'
 import './newsListItem.css';
 
 
@@ -13,7 +13,7 @@ const NewsListItem = ({
     category,
     description,
     tags,
-}) => (
+}) => ( 
     <div className="news-list-item " key={id}>
         <div className="news-image">
             <a href=""><img src={image} alt=""></img></a>
@@ -26,9 +26,10 @@ const NewsListItem = ({
                 <div className="news-category pr-2 detail-link" >In <a href="">{category}</a></div>
                 <div className="news-tags detail-link">Tags: <a href="">{tags[0]},</a><a href="">{tags[1]},</a><a href="">{tags[2]},</a></div>
             </div>
-            <div className="news-description">{description}</div>
+            <div className="news-description">{description} <Link to={`/${id}`}>...continue reading</Link></div>
         </div>
     </div>
+    
 )
 
 
