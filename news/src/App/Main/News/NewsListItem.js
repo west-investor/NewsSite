@@ -22,8 +22,8 @@ const NewsListItem = ({
             <h2><span>{title}</span></h2>
             <div className="news-detail">
                 <div className="news-date pr-2">{date}</div>    
-                <div className="news-author pr-2 detail-link">By <a href="">{author}</a></div>
-                <div className="news-category pr-2 detail-link" >In <a href="">{category}</a></div>
+                <div className="news-author pr-2 newsDetail-link">By <a href="">{author}</a></div>
+                <div className="news-category pr-2 newsDetail-link" >In <a href="">{category}</a></div>
                 <div className="news-tags detail-link">Tags: <a href="">{tags[0]},</a><a href="">{tags[1]},</a><a href="">{tags[2]},</a></div>
             </div>
             <div className="news-description">{description} <Link to={`/${id}`}>...continue reading</Link></div>
