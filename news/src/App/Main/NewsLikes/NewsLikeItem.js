@@ -2,19 +2,11 @@ import React, {Component} from 'react';
 
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
-import './newsListItem.css';
+import '../News/newsListItem.css';
 
 
-class NewsListItem extends Component {
+class NewsLikeItem extends Component {
     
-
-    onLike = () => {
-        if (this.props.isLiked) {
-            this.props.articleDislike(this.props.id)
-        } else {
-            this.props.articleLike(this.props.id)
-        }
-    }
 
 
 
@@ -30,8 +22,9 @@ class NewsListItem extends Component {
             category,
             description,
         } = this.props
-
-        return (
+        
+        
+        return ( isLiked ? (
     <div className="news-list-item " key={id}>
         <div className="news-image">
             <a href=""><img src={image} alt=""></img></a>
@@ -44,8 +37,8 @@ class NewsListItem extends Component {
                 <div className="news-category pr-2 newsDetail-link" >In <a href="">{category}</a></div>
                 {/* <div className="news-tags detail-link">Tags: <a href="">{tags[0]},</a><a href="">{tags[1]},</a><a href="">{tags[2]},</a></div> */}
             </div>
-            <div className="news-description">{description} <Link to={`/${id}`}>...continue reading</Link></div>
-            <button onClick={this.onLike}>
+            <div className="news-description">{description} <Link exact to={`/${id}`}>...continue reading</Link></div>
+            <button >
                 {
                     isLiked ? <span>&#9829;</span> : <span>&#9825;</span>
                 }
@@ -53,7 +46,7 @@ class NewsListItem extends Component {
         </div>
     </div>
     
-        )}
+            ):<div></div>)}
 }
 
 const mapStateToProps = (state,props) => {
@@ -62,15 +55,6 @@ const mapStateToProps = (state,props) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-    articleLike: (id)=> dispatch({
-        type:"LIKE",
-        id:id,
-    }),
-    articleDislike: (id)=> dispatch({
-        type:"DISLIKE",
-        id:id,
-    })
-})
 
-export default connect(mapStateToProps,mapDispatchToProps)(NewsListItem)
+
+export default connect(mapStateToProps)(NewsLikeItem)

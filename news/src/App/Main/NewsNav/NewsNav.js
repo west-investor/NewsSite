@@ -1,9 +1,11 @@
 import React from 'react';
 import './newsNav.css'
+import {Link} from 'react-router-dom'
 
 const NewsNav = () => (
     <div className="news-nav">
-        <div className="search-news">
+    <Link exact to="/Likes/liked">Liked News</Link>
+        {/* <div className="search-news">
             <form>
                 <label for="search">Search</label>
                 <input type="text" id="search" placeholder="enter news name"></input>
@@ -11,7 +13,7 @@ const NewsNav = () => (
             <div className="categories_comments">
                 <div className="switch-comments_categories">
                     <div className="categories">
-                        Categories
+                        <Link exact to="/Likes/liked">Categories</Link>
                     </div>
                     <div className="comments">
                         Recent Comments
@@ -38,7 +40,7 @@ const NewsNav = () => (
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         
     </div>
 )

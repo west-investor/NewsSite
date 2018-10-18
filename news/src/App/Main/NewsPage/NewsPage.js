@@ -6,7 +6,7 @@ import "./newsPage.css"
 
 
 
-const NewsPage =({ match,title,id,description,author,tags,category,date,image })=> console.log(match)||(
+const NewsPage =({ title,description,author,category,date,image })=> (
     <div className="newsPage">
         <div className="article">
             <div className="article-photo">
@@ -20,7 +20,7 @@ const NewsPage =({ match,title,id,description,author,tags,category,date,image })
                 <div className="news-date pr-2">{date}</div>    
                 <div className="news-author pr-2 newsDetail-link">By <a href="">{author}</a></div>
                 <div className="news-category pr-2 newsDetail-link" >In <a href="">{category}</a></div>
-                <div className="news-tags detail-link">Tags: <a href="">{tags[0]},</a><a href="">{tags[1]},</a><a href="">{tags[2]},</a></div>
+                {/* <div className="news-tags detail-link">Tags: <a href="">{tags[0]},</a><a href="">{tags[1]},</a><a href="">{tags[2]},</a></div> */}
             </div>
             <div className="article-description">
                 <p>{description}</p>

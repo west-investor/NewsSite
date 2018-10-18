@@ -9,7 +9,7 @@ import rootReducer from './features/store/root.reducer'
 
 
 const store = createStore(
-    rootReducer
+    rootReducer,
 )
 
 ReactDOM.render(
